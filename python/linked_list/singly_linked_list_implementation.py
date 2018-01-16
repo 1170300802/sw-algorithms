@@ -88,15 +88,26 @@ class LinkedList:
                 temp_node.next = temp_node.next.next
         self.length -= 1
 
-
-def print_list(linked_list):
-    print(linked_list.length)
-    if linked_list.length != 0:
-        temp_node = ll.head
-        for i in range(ll.length - 1):
-            print(temp_node.data, end=" -> ")
+    def get_value(self, index):
+        if index > self.length - 1:
+            return None
+        if index == self.length - 1:
+            return self.tail.data
+        i = 0
+        temp_node = self.head
+        while i < index:
+            i += 1
             temp_node = temp_node.next
-        print(linked_list.tail.data)
+        return temp_node.data
+
+    def print_list(self):
+        # print(self.length)
+        if self.length != 0:
+            temp_node = self.head
+            for i in range(self.length - 1):
+                print(temp_node.data, end=" -> ")
+                temp_node = temp_node.next
+            print(self.tail.data)
 
 
 if __name__ == '__main__':
@@ -106,9 +117,10 @@ if __name__ == '__main__':
     ll.append(12)
     ll.append(20)
     ll.insert(0, 10)
-    ll.insert(0, 10)
+    ll.insert(0, 13)
     ll.delete(1)
-    print_list(ll)
+    print(ll.get_value(2))
+    ll.print_list()
 
 
 
