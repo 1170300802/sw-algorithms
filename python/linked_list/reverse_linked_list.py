@@ -54,7 +54,7 @@ def reverse_linked_list_two(root_node):
         return root_node
     temp_node = reverse_linked_list_two(root_node.next)
 
-    #
+    #先反转后续节点，在当前层考虑， 注意递归终止，不要陷入递归误区(陷入递归)
     root_node.next.next = root_node
     root_node.next = None
     return temp_node

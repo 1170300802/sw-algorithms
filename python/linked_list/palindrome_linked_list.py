@@ -21,9 +21,44 @@
 
 """
 
+from singly_linked_list_implementation import LinkedList
+from reverse_linked_list import reverse_linked_list_two
+
+
+def create_list():
+    ll = LinkedList()
+    ll.append(1)
+    ll.append(1)
+    # ll.append(3)
+    # ll.append(4)
+    # ll.append(10)
+    # ll.append(4)
+    # ll.append(3)
+    # ll.append(2)
+    # ll.append(1)
+    return ll
+
+
 def palindrome_linked_list(node):
-    pass
+    if node is None or node.next is None:
+        return True
+    #龟兔算法找中点
+    fast_node = node
+    slow_node = node
+    while fast_node.next is not None and fast_node.next.next is not None:
+        slow_node = slow_node.next
+        fast_node = fast_node.next.next
+    #反转后半部分节点并返回, 后续可选择恢复反转现场
+    new_head = reverse_linked_list_two(slow_node.next)
+    while new_head is not None:
+        if new_head.data != node.data:
+            return False
+        new_head = new_head.next
+        node = node.next
+    return True
+
 
 
 if __name__ == '__main__':
-    pass
+    ll = create_list()
+    print(palindrome_linked_list(ll.head))
