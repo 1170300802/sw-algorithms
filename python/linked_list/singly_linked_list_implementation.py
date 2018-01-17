@@ -110,7 +110,8 @@ class LinkedList:
             print(temp_node.data)
 
     def print_list_two(self):
-        self.print_list_recursive(self.head)
+        if self.length != 0:
+            self.print_list_recursive(self.head)
 
     #正序递归输出
     def print_list_recursive(self, node):

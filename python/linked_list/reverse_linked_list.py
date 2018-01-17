@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 # encoding: utf-8
-from singly_linked_list_implementation import LinkedList
+
 
 """
 @author: swensun
@@ -19,7 +19,7 @@ from singly_linked_list_implementation import LinkedList
 @hint: 多种解法， 递归较为常用
 """
 
-
+from singly_linked_list_implementation import LinkedList
 
 def create_list():
     ll = LinkedList()
