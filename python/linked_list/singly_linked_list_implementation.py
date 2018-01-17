@@ -75,13 +75,13 @@ class LinkedList:
         if index == 0:
             self.head = self.head.next
         else:
-            #找到删除节点的前一个节点
+            # 找到删除节点的前一个节点
             temp_index = 0
             temp_node = self.head
             while temp_index < index - 1:
                 temp_index += 1
                 temp_node = temp_node.next
-            if index == self.length - 1: #最后一个节点
+            if index == self.length - 1:  # 最后一个节点
                 temp_node.next = None
                 self.tail = temp_node
             else:
@@ -110,10 +110,10 @@ class LinkedList:
             print(temp_node.data)
 
     def print_list_two(self):
-        if self.length != 0:
+        if self.head is not None:
             self.print_list_recursive(self.head)
 
-    #正序递归输出
+    # 正序递归输出
     def print_list_recursive(self, node):
         if node.next is None:
             print(node.data)
@@ -121,7 +121,7 @@ class LinkedList:
         print(node.data, end=" -> ")
         self.print_list_recursive(node.next)
 
-    #外部变量可以传入递归，做其他或者中断操作。
+    # 外部变量可以传入递归，做其他或者中断操作。
     def print_list_recursive_reverse(self, node, data):
         if node.next is None:
             print(node.data, end=" -> ")
@@ -131,7 +131,6 @@ class LinkedList:
             print(data)
         else:
             print(node.data, end=" -> ")
-
 
 
 if __name__ == '__main__':
@@ -145,9 +144,3 @@ if __name__ == '__main__':
     print(ll.get_value(2))
     ll.print_list_one()
     ll.print_list_two()
-
-
-
-
-
-

@@ -95,12 +95,6 @@ def find_node(node):
         node.next = node.next.next
     temp_k -= 1
 
-
-
-
-
-
-
 if __name__ == '__main__':
     ll = create_list()
     temp_k = 0
