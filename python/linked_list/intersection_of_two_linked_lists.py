@@ -121,15 +121,6 @@ def intersection_of_two_linked_lists_three(node_one, node_two):
     #求的入环点，从头节点遍历到入环点的长度加上环的长度，等于链表的长度
 
 
-
-
-
-
-
-
-
-
-
 if __name__ == '__main__':
     ll = LinkedList()
     # ll.append(1)
