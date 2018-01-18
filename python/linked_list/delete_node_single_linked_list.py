@@ -13,7 +13,7 @@
 
 @time: 2018/1/16 15:11
 
-@desc: 删除单向链表的节点(非表头或表尾)，参数只有节点这个元素， O(1)
+@desc: 删除单向链表的节点(不可以是尾节点)，参数只有节点这个元素， O(1)
 
 @hint:  在插入和删除节点，都是需要找到需要插入和删除元素的前一个节点进行操作。因此可以把要删除的节点变为前一个节点。
 """
@@ -34,6 +34,10 @@ def create_list():
 def delete_node(node):
     if node is None:
         return
+    if node.next is None:
+        #尾节点
+        node = node.next
+        return
     node.data = node.next.data
     node.next = node.next.next
 
@@ -41,7 +45,7 @@ if __name__ == '__main__':
     ll = create_list()
     ll.print_list_two()
     node = ll.head
-    while node.data != 3:
+    while node.data != 6:
         node = node.next
     delete_node(node)
     ll.print_list_two()
