@@ -30,6 +30,6 @@ def contains_duplicate(array):
 
 if __name__ == '__main__':
     array_test_one = [1, 2, 3, 4, 5]
-    assert (contains_duplicate(array_test_one) == False)
+    assert (contains_duplicate(array_test_one) is False)
     array_test_two = [1, 2, 1, 4, 5]
-    assert (contains_duplicate(array_test_two) == True)
+    assert (contains_duplicate(array_test_two) is True)
