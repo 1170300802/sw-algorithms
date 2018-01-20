@@ -40,6 +40,8 @@ def binary_tree_level_order_traversal_two(root):
     if root is None:
         return
     node_list = []
+    result = []
+    temp = []
     node_list.append(root)
     level = 1
     while len(node_list) != 0:
@@ -50,10 +52,15 @@ def binary_tree_level_order_traversal_two(root):
         if temp_node.right_child is not None:
             node_list.append(temp_node.right_child)
         print(temp_node.data, end="  ")
+        temp.append(temp_node.data)
         if level == 0 and len(node_list) != 0:
             level = len(node_list)
             print()
+            result.append(temp)
+            temp = []
     print()
+    result.append(temp)
+    print(result)
 
 
 
