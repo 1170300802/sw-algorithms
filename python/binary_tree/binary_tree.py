@@ -35,6 +35,7 @@ def create_tree():
     node_list[2].right_child = node_list[5]
     node_list[3].right_child = node_list[7]
     node_list[4].right_child = node_list[9]
+    node_list[5].left_child = node_list[6]
     node_list[7].left_child = node_list[8]
 
     return node_list[0]  #return tree root node
