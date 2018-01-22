@@ -2,6 +2,6 @@
 
 common and interview algorithms in different languages
 
-question：[https://github.com/yunshuipiao/AlgoDS/blob/master/README-CN.md](https://github.com/yunshuipiao/AlgoDS/blob/master/README-CN.md)
+问题列表：[https://github.com/yunshuipiao/sw-algorithms/blob/master/questions.md](https://github.com/yunshuipiao/sw-algorithms/blob/master/questions.md)
 
 ### Todo
