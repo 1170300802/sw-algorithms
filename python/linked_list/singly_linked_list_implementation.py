@@ -111,15 +111,15 @@ class LinkedList:
 
     def print_list_two(self):
         if self.head is not None:
-            self.print_list_recursive(self.head)
+            self._print_list_recursive(self.head)
 
     # 正序递归输出
-    def print_list_recursive(self, node):
+    def _print_list_recursive(self, node):
         if node.next is None:
             print(node.data)
             return
         print(node.data, end=" -> ")
-        self.print_list_recursive(node.next)
+        self._print_list_recursive(node.next)
 
     # 外部变量可以传入递归，做其他或者中断操作。
     def print_list_recursive_reverse(self, node, data):
@@ -132,6 +132,20 @@ class LinkedList:
         else:
             print(node.data, end=" -> ")
 
+
+def create_sorted_list():
+    ll = LinkedList()
+    ll.append(1)
+    ll.append(3)
+    ll.append(4)
+    ll.append(5)
+    ll.append(7)
+    ll.append(10)
+    ll.append(12)
+    ll.append(24)
+    ll.append(35)
+    ll.append(40)
+    return ll
 
 if __name__ == '__main__':
     ll = LinkedList()
