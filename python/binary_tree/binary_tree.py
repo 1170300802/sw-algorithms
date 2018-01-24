@@ -57,6 +57,21 @@ def create_symmetric_tree():
     return node_list[0]  #return tree root node
 
 
+def create_bst():
+    node_list = [Node(0), Node(1), Node(2), Node(3), Node(4), Node(5), Node(6), Node(7), Node(8), Node(9), Node(10)]
+    node_list[1].left_child = node_list[0]
+    node_list[1].right_child = node_list[2]
+    node_list[3].left_child = node_list[1]
+    node_list[3].right_child = node_list[4]
+    node_list[5].left_child = node_list[3]
+    node_list[5].right_child = node_list[8]
+    node_list[8].left_child = node_list[6]
+    node_list[8].right_child = node_list[10]
+    node_list[6].right_child = node_list[7]
+    node_list[10].left_child = node_list[9]
+
+    return node_list[5]  #return tree root node
+
 class BinaryTree:
     def __init__(self):
         # self.treeNode = Node()
@@ -65,7 +80,8 @@ class BinaryTree:
     def create_symmetric_tree(self):
         self.root = create_symmetric_tree()
 
-
+    def create_bst(self):
+        self.root = create_bst()
 
 if __name__ == '__main__':
     tree = BinaryTree()
