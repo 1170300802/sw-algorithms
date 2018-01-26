@@ -145,7 +145,7 @@
 2) [Ransom Note：勒索信](https://github.com/sherxon/AlgoDS/blob/master/src/problems/easy/RansomNote.java)  
 3) [Reverse String：反转字符串](https://github.com/sherxon/AlgoDS/blob/master/src/problems/easy/ReverseString.java)  
 4) [Longest Common Prefix：最长公共前缀](https://github.com/sherxon/AlgoDS/blob/master/src/problems/easy/LongestCommonPrefix.java)  
-5) [Is Anagram：回文字符串](https://github.com/sherxon/AlgoDS/blob/master/src/problems/easy/ValidAnagram.java)  
+5) [Is Anagram：验证颠倒字母顺序而构成的字符串](https://github.com/sherxon/AlgoDS/blob/master/src/problems/easy/ValidAnagram.java)  
 6) [Needle and Haystack：针和草堆](https://github.com/sherxon/AlgoDS/blob/master/src/problems/easy/ImplementstrSt.java)  
 7) [Word Break：单词分割](https://github.com/sherxon/AlgoDS/blob/master/src/problems/medium/WordBreak.java)  
 8) [Meta Strings：元字符串](https://github.com/sherxon/AlgoDS/blob/master/src/problems/medium/MetaStrings.java)  

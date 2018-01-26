@@ -19,7 +19,7 @@
 def reverse_string(string):
     #由于python的字符串不能执行  string[0] == 'a' 操作
     result = ''
-    for i in range(len(string) - 1, -1 , -1):
+    for i in range(len(string) - 1, -1, -1):
         result += string[i]
     return result
 
@@ -28,5 +28,7 @@ def reverse_string(string):
 if __name__ == '__main__':
     s = "qwertyuio"
     print(s)
-    s = reverse_string(s)
-    print(s)
+    ss = reverse_string(s)
+    print(ss)
+    sss = s[::-1]
+    print(sss)
