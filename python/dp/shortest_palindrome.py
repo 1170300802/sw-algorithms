@@ -13,7 +13,7 @@
 
 @desc:  最短回文串：给定一个字符串，在字符串的前面加入字符，将该字符串变成一个最短的回文字符串
 
-@hint:
+@hint:  kmp
 """
 
 def shortest_palindrome(string):
