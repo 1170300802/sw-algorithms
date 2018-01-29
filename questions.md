@@ -102,7 +102,7 @@
 3) [Subset Sum：子集和问题](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/SubsetSum.java)     
 4) [0/1 Knapsack Problem：0/1背包问题](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/Knapsack01.java)     
 5) [Shortest Palindrome (KMP)：最短回文串](https://github.com/sherxon/AlgoDS/blob/master/src/problems/hard/ShortestPalindrome.java) 
-6) [Minimum Square Sum：最小平方和](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/MinimumSquareSum.java)
+6) [Minimum Square Sum：平方和的最小个数](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/MinimumSquareSum.java)
 7) [Maximum weight transformation of a String：字符串的最大重量转换](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/MaxWeightTransformation.java)
 8) [Coin Change：硬币找零](https://github.com/sherxon/AlgoDS/blob/master/src/problems/medium/CoinChange.java)  
 
