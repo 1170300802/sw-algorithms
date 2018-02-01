@@ -27,13 +27,13 @@ def merge_intervals(l):
     out = [l.pop(0)]
     for i in l:
         if out[-1][-1] >= i[0]:
-            out[-1][-1] = i[-1]
+            out[-1][-1] = max(out[-1][-1], i[-1])
         else:
             out.append(i)
     return out
 
 
 if __name__ == '__main__':
-    l = [[15,18],[2,6], [1,3], [8,10]]
+    l = [[15,18],[2,5], [1,6], [8,10]]
     print(l)
     print(merge_intervals(l))
