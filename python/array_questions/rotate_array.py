@@ -27,7 +27,7 @@ def rotate(array, k):
     swap_one(array, 0, k - 1)
     swap_one(array, k, length - 1)
     # 还可以用切片交换
-    # array = array[length-k:] + array[:k+1]
+    # array = array[length-k:] + array[:length-k]
     # print(array)
 
 
