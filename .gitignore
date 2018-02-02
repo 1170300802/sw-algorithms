@@ -8,3 +8,4 @@ kotlin/out
 c++/cmake-build-debug
 c++/.idea
 *.pyc
+go/index
