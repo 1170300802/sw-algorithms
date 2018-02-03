@@ -47,7 +47,7 @@ def back_track(index, word, temp):
         temp[index] = False
         back_track(index + 1, word, temp)
 
-# 求给定数据的全组合  A(4, 4)
+# 求给定数据的全组合  C(4,4) + C(4,3) + C(4,2) + C(4,1) + C(4, 0)
 def all_comb_two(word):
     if len(word) == 0:
         return word
@@ -61,7 +61,7 @@ def all_comb_two(word):
         return temp
 
 
-# 求给定数据的全组合  A(4, 4)
+# 求给定数据的全组合  C(4,4) + C(4,3) + C(4,2) + C(4,1) + C(4, 0)
 def all_comb_two_yield(word):
     if len(word) == 0:
         yield word
@@ -72,8 +72,20 @@ def all_comb_two_yield(word):
         for perm in all_comb_two(word[1:]):
             yield (perm)
 
+# dfs 求给定数组的全组合 C(4,4) + C(4,3) + C(4,2) + C(4,1) + C(4, 0)
+def all_comb_three(word):
+    res = []
+    dfs(word, 0, [], res)
+    return res
 
-# 求给定数据的全排列  C(4,4) + C(4,3) + C(4,2) + C(4,1) + C(4, 0)
+def dfs(word, index, path, res):
+    res.append(path)
+    for i in range(index, len(word)):
+        dfs(word, i + 1, path + [word[i]], res)
+
+
+
+# 求给定数据的全排列  A(4, 4)
 def all_perms(word):
     if len(word) <= 1:
         yield word
@@ -81,7 +93,6 @@ def all_perms(word):
         for perm in all_perms(word[1:]):
             for i in range(len(word)):
                 yield (perm[:i] + word[0:1] + perm[i:])
-
 
 # 求给定数据的全排列  A(4, 4)
 def all_perms_two(word):
@@ -96,10 +107,10 @@ def all_perms_two(word):
 
 
 if __name__ == '__main__':
-    a = "apple"
+    a = "appl"
     b = "pleap"
-    print(a in all_perms(b))
-    print(anagram(a, b))
     # 1: 求出任一的全组合，判断另一个是否在其中
+    print(a in all_perms(b))
 
     # 2: 映射判断：两个单词出现的字母数量是一样的
+    print(anagram(a, b))
