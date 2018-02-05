@@ -13,7 +13,7 @@
 
 @desc: 单词缩写
 
-@hint: word => [1ord, w1rd, wo1d, w2d, 3d, w3 ... etc]
+@hint: word => [1ord, w1rd, wo1d, w2d, 3d, w3 ... etc], skip
 """
 
 def generate_abbreviations(word):

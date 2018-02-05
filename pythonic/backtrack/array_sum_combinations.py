@@ -13,5 +13,5 @@
 
 @desc:
 
-@hint:
+@hint: skip
 """
