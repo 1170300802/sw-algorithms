@@ -34,6 +34,6 @@ def add_pair(res, temp_s, left, right):
 
 
 if __name__ == '__main__':
-    a = 3
+    a = 2
     r = generate_parenthesis(a)
     print(r)

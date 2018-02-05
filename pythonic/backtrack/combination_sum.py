@@ -13,7 +13,7 @@
 
 @desc: 和的组合：给定一个集合和目标数字，求集合中任意个数的和为目标数字的所有组合。数字可以重复。
 
-@hint:  set [2, 3, 6, 7] and target 7
+@hint:  set [2, 3, 6, 7] and target 7:深度优先搜索
 """
 
 def combination_sum(set, target):
