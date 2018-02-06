@@ -36,9 +36,9 @@ def single_number_two(list):
     return res
 
 if __name__ == '__main__':
-    # a = [2, 2, 3, 5, 3, 4, 5, 7, 7]
-    # r = single_number(a)
-    # print(r)
-    b = [2,2,2,3, 4, 4, 4]
+    a = [2, 2, 3, 5, 3, 4, 5, 7, 7]
+    r = single_number(a)
+    print(r)
+    b = [2, 2, 2, 3, 3, 3, 5]
     r = single_number_two(b)
     print(r)
