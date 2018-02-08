@@ -13,7 +13,7 @@
 
 @desc: 线段树: 数列的更新与区间的查询
 
-@hint:
+@hint:  skip
 """
 
 class segment_tree:
