@@ -9,18 +9,18 @@ question_02：[https://github.com/yunshuipiao/algorithms/blob/master/README_CN.m
 
 category | question | java| python| javascript | go| c++ | kotlin| 
 --|--|--|--|--|--|--|--| 
-|array | Rotate Array| | "+1"| | | | | 
-| | Contains Duplicate| | "+1"| | | | | 
-| | Find Peak Element| |"+1" | | | | | 
-| |Maximum | |"+1" | | | | | 
-| |kth Largest Element in An Array | |"+1" | | | | | 
-| |Fin All Duplicates in an Array | |"+1" | | | | | 
-| | Longest increasing Subsequence| |"+1" | | | | | 
-| |Rotate Image, matrix | |"+1" | | | | | 
-| |Shuffle an Array | | "+1" | | | | | 
-| |Find Min in Rotated Array | |"+1" | | | | | 
-| |Search in Rotate Array | | "+1" | | | | | 
-|Linked List | Singly Linked List Implementation| |"+1" | | | | | 
+|array | Rotate Array| | :+1:| | | | | 
+| | Contains Duplicate| | :+1:| | | | | 
+| | Find Peak Element| |:+1: | | | | | 
+| |Maximum | |:+1: | | | | | 
+| |kth Largest Element in An Array | |:+1: | | | | | 
+| |Fin All Duplicates in an Array | |:+1: | | | | | 
+| | Longest increasing Subsequence| |:+1: | | | | | 
+| |Rotate Image, matrix | |:+1:| | | | | 
+| |Shuffle an Array | | :+1: | | | | | 
+| |Find Min in Rotated Array | |:+1: | | | | | 
+| |Search in Rotate Array | | :+1: | | | | | 
+|Linked List | Singly Linked List Implementation| |:+1: | | | | | 
 | | | | | | | | | 
 | | | | | | | | | 
 | | | | | | | | | 
