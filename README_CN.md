@@ -156,10 +156,11 @@ category | question | java| python| javascript | go| c++ | kotlin|
 +  python/sort_search/quick_sort
 +  python/array/rotate_array
 
+注：上面算法没有给出题目描述。因为这些都是常用算法，google+题目 就可以得到题目描述。部分为leetcode题目。
 
 ## 贡献
-是否发现Bug？
-或者有更好的实现方法？
-或者想用不同的语言来实现
-或者有更多的算法想实现？
+是否发现Bug?  
+或者有更好的实现方法?  
+或者想用不同的语言来实现?  
+或者有更多的算法想实现?  
 请提交PR，一起完成吧 :)
