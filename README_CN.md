@@ -1,12 +1,12 @@
-English | [简体中文](https://github.com/yunshuipiao/sw-algorithms/blob/master/README_CN.md)
+[English](https://github.com/yunshuipiao/sw-algorithms/blob/master/README.md) | 简体中文
 
-# algorithms
+# 算法
 
-common and interview algorithms in different languages
+不同语言实现的基本算法
 
-question_01：[https://github.com/yunshuipiao/sw-algorithms/blob/master/questions_01.md](https://github.com/yunshuipiao/sw-algorithms/blob/master/questions_01.md)
+问题列表_01：[https://github.com/yunshuipiao/sw-algorithms/blob/master/questions_01.md](https://github.com/yunshuipiao/sw-algorithms/blob/master/questions_01.md)
 
-question_02：[https://github.com/yunshuipiao/algorithms/blob/master/README_CN.md](https://github.com/yunshuipiao/algorithms/blob/master/README_CN.md)
+问题列表_02：[https://github.com/yunshuipiao/algorithms/blob/master/README_CN.md](https://github.com/yunshuipiao/algorithms/blob/master/README_CN.md)
 
 
 category | question | java| python| javascript | go| c++ | kotlin| 
@@ -102,15 +102,16 @@ category | question | java| python| javascript | go| c++ | kotlin|
 | | Hashed Array Tree| |  | | | | | 
 | | LRU Cache| | :+1: | | | | | 
 
-Folder structure should be like this : Language/category/file
+文件结构：语言/算法类别/文件名
 
-Example:
+示例:
 +  python/sort_search/quick_sort
 +  python/array/rotate_array
 
-## Contribute
-Did you find a bug?   
-any way to do it better?   
-any question to add it?  
-any another language to do it ?  
-please feel free to pull-request it :)  
+
+## 贡献
+是否发现Bug？
+或者有更好的实现方法？
+或者想用不同的语言来实现
+或者有更多的算法想实现？
+请提交PR，一起完成吧 :)
