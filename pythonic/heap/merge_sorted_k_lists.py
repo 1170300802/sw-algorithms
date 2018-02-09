@@ -21,9 +21,13 @@ from queue import PriorityQueue
 
 from sys import path
 
+
+
 path.append("/Users/swensun/code/algorithms/sw-algorithms/")
 
-from pythonic.linked_list import LinkedList, Node
+from pythonic.LinkedList import Node, LinkedList
+
+
 
 
 def merge_sorted_k_lists(node_list):
