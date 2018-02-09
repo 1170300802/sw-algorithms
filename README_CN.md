@@ -8,7 +8,6 @@
 
 问题列表_02：[https://github.com/yunshuipiao/algorithms/blob/master/README_CN.md](https://github.com/yunshuipiao/algorithms/blob/master/README_CN.md)
 
-
 category | question | java| python| javascript | go| c++ | kotlin|
 --|--|--|--|--|--|--|--|
 |array | Rotate Array| | :+1:| | | | |
@@ -43,6 +42,8 @@ category | question | java| python| javascript | go| c++ | kotlin|
 | | Merge Sort List| | :+1: | | | | |
 | | Find Linked List Cycle| | :+1: | | | | |
 | | Merge k Sorted Lists| | :+1: | | | | |
+| | add_two_numbers| | :+1: | | | | |
+| | copy_random_pointer| | :+1: | | | | |
 |Binary Tree |Binary Tree Level Order Traversal | | :+1: | | | | |
 | | Sum of Left Leaves| | :+1: | | | | |
 | | Invert Binary Tree| | :+1: | | | | |
@@ -149,6 +150,8 @@ category | question | java| python| javascript | go| c++ | kotlin|
 | | pacific_atlantic| | | | | | |
 | |sudoku_solver | | :+1: | | | | |
 | | walls_and_gates| | :+1: | | | | |
+|heap |merge_sorted_k_lists | | :+1: | | | | |
+| | sliding_window_max| | :+1: | | | | |
 
 文件结构：语言/算法类别/文件名
 

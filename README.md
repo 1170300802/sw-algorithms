@@ -43,6 +43,8 @@ category | question | java| python| javascript | go| c++ | kotlin|
 | | Merge Sort List| | :+1: | | | | |
 | | Find Linked List Cycle| | :+1: | | | | |
 | | Merge k Sorted Lists| | :+1: | | | | |
+| | add_two_numbers| | :+1: | | | | |
+| | copy_random_pointer| | :+1: | | | | |
 |Binary Tree |Binary Tree Level Order Traversal | | :+1: | | | | |
 | | Sum of Left Leaves| | :+1: | | | | |
 | | Invert Binary Tree| | :+1: | | | | |
@@ -149,6 +151,8 @@ category | question | java| python| javascript | go| c++ | kotlin|
 | | pacific_atlantic| | | | | | |
 | |sudoku_solver | | :+1: | | | | |
 | | walls_and_gates| | :+1: | | | | |
+|heap |merge_sorted_k_lists | | :+1: | | | | |
+| | sliding_window_max| | :+1: | | | | |
 
 Folder structure should be like this : Language/category/file
 
