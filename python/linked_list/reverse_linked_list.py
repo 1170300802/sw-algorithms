@@ -35,17 +35,13 @@ def create_list():
 def reverse_linked_list_one(root_node):
     if root_node is None:
         return root_node
-    cur = root_node.next
-    pre = root_node
-    root_node.next = None
-    while cur.next is not None:
-        node = cur
-        cur = cur.next
-        node.next = pre
-        pre = node
-    cur.next = pre
-    root_node = cur
-    return root_node
+    prev = None
+    while root_node:
+        cur = root_node
+        root_node = root_node.next
+        cur.next = prev
+        prev = cur
+    return prev
 
 
 #递归: 在反转当前节点之前先反转后续节点
@@ -63,5 +59,5 @@ def reverse_linked_list_two(root_node):
 if __name__ == '__main__':
     ll = create_list()
     ll.print_list_two()
-    ll.head = reverse_linked_list_two(ll.head)
+    ll.head = reverse_linked_list_one(ll.head)
     ll.print_list_two()
