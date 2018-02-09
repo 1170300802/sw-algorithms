@@ -18,6 +18,9 @@
 
 import collections
 
+from heapq import heappop, heapify, heappush, heapreplace
+
+
 def sliding_window_max(array, k):
     if not array:
         return array
@@ -33,12 +36,36 @@ def sliding_window_max(array, k):
     res.append(max(queue))
     return res
 
-def slide_window_max_two(array, k):
-    pass
+
+#  O(n)
+def sliding_window_max_two(array, k):
+    res = []
+    temp_max = []
+    for i in range(k):
+        if not temp_max:
+            temp_max.append(i)
+        else:
+            if array[temp_max[-1]] < array[i]:
+                temp_max.pop()
+                temp_max.append(i)
+    res.append(array[temp_max[0]])
+
+    for i in range(k, len(array)):
+        print(temp_max)
+        if i - temp_max[0] >= k:
+            temp_max.pop(0)  # 移除窗口外的元素
+        if not temp_max:
+            temp_max.append(i)
+        else:
+            if array[temp_max[-1]] < array[i]:
+                temp_max.pop()
+                temp_max.append(i)
+        res.append(array[temp_max[0]])
+    print(res)
 
 
 if __name__ == '__main__':
-    windows = [1,3,-1,-3,5,3,6,7]
+    windows = [1, 3, -1, -3, 5, 3, 6, 7]
     k = 3
-    r = sliding_window_max(windows, k)
+    r = sliding_window_max_two(windows, k)
     print(r)

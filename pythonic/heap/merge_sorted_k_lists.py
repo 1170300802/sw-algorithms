@@ -17,6 +17,7 @@
 """
 
 from heapq import heappop, heapify, heappush, heapreplace
+from queue import PriorityQueue
 
 from sys import path
 
@@ -37,7 +38,21 @@ def merge_sorted_k_lists(node_list):
             heapreplace(h, (n.next.data, n.next))
         node.next = n
         node = node.next
+    return dummy.next
 
+
+def merge_sorted_k_lists_two(node_list):
+    dummy = Node(-1)
+    curr = dummy
+    q = PriorityQueue()
+    for node in node_list:
+        if node:
+            q.put( (node.data, node) )
+    while q.qsize() > 0:
+        curr.next = q.get()[1]
+        curr = curr.next
+        if curr.next:
+            q.put( (curr.next.data, curr.next))
     return dummy.next
 
 
@@ -56,7 +71,7 @@ if __name__ == '__main__':
         ll_list[i].print_list_two()
 
     node_list.reverse()
-    result = merge_sorted_k_lists(node_list)
+    result = merge_sorted_k_lists_two(node_list)
     lll = LinkedList()
     lll.head = result
     lll.print_list_two()
