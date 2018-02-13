@@ -16,16 +16,16 @@
 @hint:
 """
 
-def first_occurrence(array, query):
+def last_occurrence(array, query):
     lo, hi = 0, len(array) - 1
 
     while lo <= hi:
         mid = (lo + hi) >> 1
-        if mid == 0 and array[mid] == query:
+        if mid == hi and array[mid] == query:
             return mid
-        if array[mid] == query and array[mid - 1] != query:
+        if array[mid] == query and array[mid + 1] != query:
             return mid
-        elif array[mid] < query:
+        elif array[mid] <= query:
             lo = mid + 1
         else:
             hi = mid - 1
@@ -36,21 +36,21 @@ if __name__ == "__main__":
     print(array)
     print("-----SEARCH-----")
     query = 3
-    print("found first: ", query, " in index:", first_occurrence(array, query))
-    print("-----SEARCH-----")
-    query = 5
-    print("found first: ", query, " in index:", first_occurrence(array, query))
+    print("found last: ", query, " in index:", last_occurrence(array, query))
     print("-----SEARCH-----")
     query = 4
-    print("found first: ", query, " in index:", first_occurrence(array, query))
+    print("found last: ", query, " in index:", last_occurrence(array, query))
     print("-----SEARCH-----")
     query = 6
-    print("found first: ", query, " in index:", first_occurrence(array, query))
+    print("found last: ", query, " in index:", last_occurrence(array, query))
+    print("-----SEARCH-----")
+    query = 1
+    print("found last: ", query, " in index:", last_occurrence(array, query))
     print("-----SEARCH-----")
     query = -1
-    print("found first: ", query, " in index:", first_occurrence(array, query))
+    print("found last: ", query, " in index:", last_occurrence(array, query))
     print("-----SEARCH-----")
     query = 9
-    print("found first: ", query, " in index:", first_occurrence(array, query))
+    print("found last: ", query, " in index:", last_occurrence(array, query))
 
 
