@@ -27,7 +27,7 @@ def sort_colors(colors):
         if v == 0:
             colors[i] = 0
             i += 1
-        print(colors)
+
 
 
 if __name__ == '__main__':
