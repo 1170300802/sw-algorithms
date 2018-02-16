@@ -44,6 +44,7 @@ def retDepGraph():
                     continue
                 out.extend(top_sort(visited, child))
         out.append(pac)
+        print(visited)
     print(out)
 
 if __name__ == '__main__':
