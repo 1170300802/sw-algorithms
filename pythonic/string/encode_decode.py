@@ -27,7 +27,21 @@ def encode(strs):
         res += str(len(string)) + ":" + string
     return res
 
+def decode(string):
+    strs = []
+    i = 0
+    while i < len(string):
+        index = string.find(":", i)
+        # print(index)
+        size = int(string[i:index])
+        strs.append(string[index + 1: index + 1 + size])
+        i = index + 1 + size
+    return strs
+
+
 if __name__ == '__main__':
     strs = "keno is awesome"
     r = encode(strs)
+    print(r)
+    r = decode(r)
     print(r)
