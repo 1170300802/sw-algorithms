@@ -117,6 +117,14 @@ category | question | java| python| javascript | go| c++ | kotlin|
 | | Word Break| |  | | | | |
 | |Mate Strings | |  | | | | |
 | | Rabin karp Subsequence search| | :+1: | | | | |
+| |add_binary | | :+1: | | | | |
+| |decode_string | | :+1: | | | | |
+| |encode_decode | | :+1: | | | | |
+| |int_to_roman | | :+1: | | | | |
+| |is_palindrome | | :+1: | | | | |
+| | make_sentence| | :+1: | | | | |
+| | rabin_karp| | :+1: | | | | |
+| |reverse_string | | :+1: | | | | |
 |Tree | BST(recursive)| | :+1: | | | | |
 | | BST(iterative)| | :+1: | | | | |
 | |AVL Tree(BBST) | | :+1: | | | | |
@@ -124,6 +132,7 @@ category | question | java| python| javascript | go| c++ | kotlin|
 | | Hashed Array Tree| |  | | | | |
 | | LRU Cache| | :+1: | | | | |
 | | Segment Tree| | :+1: | | | | |
+| | binary_tree_paths| | :+1: | | | | |
 |BackTrack |Anagram | | :+1: | | | | |
 | | Array Sum Combinations| | :+1: | | | | |
 | |Combination Sum | | :+1: | | | | |
@@ -153,6 +162,21 @@ category | question | java| python| javascript | go| c++ | kotlin|
 | | walls_and_gates| | :+1: | | | | |
 |heap |merge_sorted_k_lists | | :+1: | | | | |
 | | sliding_window_max| | :+1: | | | | |
+|map |HashTable | | :+1: | | | | |
+| math| gcd| | :+1: | | | | |
+| | nth_digit| | :+1: | | | | |
+| | prime_test| | :+1: | | | | |
+|queue | max_sliding_window| | :+1: | | | | |
+| | queue| | :+1: | | | | |
+| |reconstruct_queue | | :+1: | | | | |
+| search|binary_search | | :+1: | | | | |
+| | first_search| | :+1: | | | | |
+| | last_search| | :+1: | | | | |
+|sort | comb_sort| | :+1: | | | | |
+| | sort_colors| | :+1: | | | | |
+| | top_sort| | :+1: | | | | |
+|stack | stack| | :+1: | | | | |
+| |valid_parenthesis | | :+1: | | | | |
 
 Folder structure should be like this : Language/category/file
 
