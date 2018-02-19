@@ -11,7 +11,7 @@
 
 @file: is_palindrome.py
 
-@desc: 判断回文字符串
+@desc: 判断回文字符串:面试也常见
 
 @hint:
 
