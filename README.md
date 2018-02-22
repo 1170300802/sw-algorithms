@@ -8,6 +8,8 @@ question_01：[https://github.com/yunshuipiao/sw-algorithms/blob/master/question
 
 question_02：[https://github.com/yunshuipiao/algorithms/blob/master/README_CN.md](https://github.com/yunshuipiao/algorithms/blob/master/README_CN.md)
 
+and so on
+
 
 category | question | java| python| javascript | go| c++ | kotlin|
 --|--|--|--|--|--|--|--|
