@@ -1,8 +1,14 @@
-[![](https://img.shields.io/badge/version-1.0.1-brightgreen.svg)](https://github.com/yunshuipiao/sw-algorithms)  [![](https://img.shields.io/badge/license-Apache--2.0-brightgreen.svg)](https://github.com/yunshuipiao/sw-algorithms/blob/master/LICENSE)
+
 
 English | [简体中文](https://github.com/yunshuipiao/sw-algorithms/blob/master/README_CN.md)
 
 # algorithms
+
+[![GitHub forks](https://img.shields.io/github/forks/yunshuipiao/sw-algorithms.svg)](https://github.com/yunshuipiao/sw-algorithms/blob/master/README.md)
+[![GitHub forks](https://img.shields.io/github/stars/yunshuipiao/sw-algorithms.svg)](https://github.com/yunshuipiao/sw-algorithms/blob/master/README.md)
+[![GitHub forks](https://img.shields.io/github/license/yunshuipiao/sw-algorithms.svg)](https://github.com/yunshuipiao/sw-algorithms/blob/master/README.md)
+[![](https://img.shields.io/badge/version-1.0.1-brightgreen.svg)](https://github.com/yunshuipiao/sw-algorithms) 
+
 
 common and interview algorithms in different languages
 
