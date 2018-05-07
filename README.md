@@ -1,3 +1,5 @@
+[![](https://img.shields.io/badge/version-1.0.1-brightgreen.svg)](https://github.com/yunshuipiao/sw-algorithms)  [![](https://img.shields.io/badge/license-Apache--2.0-brightgreen.svg)](https://github.com/yunshuipiao/sw-algorithms/blob/master/LICENSE)
+
 English | [简体中文](https://github.com/yunshuipiao/sw-algorithms/blob/master/README_CN.md)
 
 # algorithms
