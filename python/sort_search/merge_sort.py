@@ -32,6 +32,7 @@ def sort(array, lo, hi, temp_array):
 def merge(array, lo, mid, hi, temp_array):
     for i in range(lo, hi + 1):
         temp_array[i] = array[i]
+    print(temp_array)
     i = lo
     j = mid + 1
     for k in range(lo, hi + 1):
@@ -50,12 +51,8 @@ def merge(array, lo, mid, hi, temp_array):
 
 
 
-
-
-
-
 if __name__ == '__main__':
-    array = [3, 1, 10, 8, 7,  5, 4, 2, 6, 7, 0]
+    array = [3, 1, 2]
     print(array)
     merge_sort(array)
     print(array)
