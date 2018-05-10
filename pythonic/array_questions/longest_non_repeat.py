@@ -11,7 +11,7 @@
 
 @file: longest_non_repeat.py
 
-@desc: 最长不重复子串  （字串连续， 子序列不连续)
+@desc: 最长不重复子串  (子串连续， 子序列不连续)
 
 @hint:
 """
