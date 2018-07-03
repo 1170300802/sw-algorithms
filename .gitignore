@@ -9,3 +9,5 @@ c++/cmake-build-debug
 c++/.idea
 *.pyc
 go/index
+
+leetcode/0032-Search-in-Rotated-Sorted-Array/\.ipynb_checkpoints/index-checkpoint\.ipynb
