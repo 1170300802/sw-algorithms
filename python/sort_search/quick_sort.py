@@ -16,27 +16,33 @@
 @hint:
 """
 
-def quick_sort(array, lo, hi):
-    if lo >= hi:
-        return
-    mid = portion_two(array, lo, hi)
-    quick_sort(array, lo, mid - 1)
-    quick_sort(array, mid + 1, hi)
+import random
 
-def portion_two(array, lo, hi):
-    i = lo
-    j = hi
-    while i < j:
-        while i < j and array[i] <= array[hi]:
+
+def quicksort(arr, left, right):
+    #only if left < right , go on
+    if left >=right:
+        return 
+    random_index = random.randint(left, right)
+    #swap privot and first
+    arr[left], arr[random_index] = arr[random_index], arr[left]
+    pivot = arr[left]
+    lt = left # arr[left+1...lt] < v
+    gt = right + 1 # arr[gt...right] > v
+    i = left + 1 # arr[lt+1...i] == v
+    #when i = gt, stop
+    while i < gt:
+        if arr[i] < pivot:
+            arr[i], arr[lt+1] = arr[lt+1], arr[i]
+            lt += 1
             i += 1
-        while i < j and array[j] >= array[hi]:
-            j -= 1
-        array[i], array[j] = array[j], array[i]
-    array[i], array[hi] = array[hi],array[i]
-    return i
-
-if __name__ == '__main__':
-    array = [3, 1, 10, 8, 9,  5, 4, 2, 6, 7, 0]
-    print(array)
-    quick_sort(array, 0, len(array) - 1)
-    print(array)
+        elif arr[i] > pivot:
+            arr[i], arr[gt-1] = arr[gt-1], arr[i]
+            gt -= 1
+        else:
+            i += 1
+    #swap first(privot) to v
+    arr[left], arr[lt] = arr[lt], arr[left]
+    #iterator
+    quicksort(arr, left, lt-1)
+    quicksort(arr, gt, right)
